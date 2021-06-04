@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
-import Slideshow from './components/Slideshow';
+import Main from './components/MainComponent';
+import { BrowserRouter } from 'react-router-dom';
+import { RESTAURANTS } from './shared/restaurants';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            restaurants: RESTAURANTS
+        };
+    }
     render() {
         return (
+        <BrowserRouter>
             <div className="App">
-                <Navbar dark color="primary">
-                <div className="container">
-                    <NavbarBrand href="/">Visit Nashville</NavbarBrand>
-                </div>
-                </Navbar>
-                <Slideshow />
+                <Main />
             </div>
+        </BrowserRouter>
         );
     }
 }

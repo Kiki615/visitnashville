@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import { fadeImages } from '../shared/fadeSlideshowImages';
 
-const fadeImages = [
-    'assets/images/grandolopry.jpg',
-    'assets/images/legends-corner.jpg',
-    'assets/images/nashville-acme.jpg',
-    'assets/images/nashville-skyline.jpg',
-    'assets/images/tinpansouth.jpg'];
 
     const fadeProperties = {
         duration: 5000,

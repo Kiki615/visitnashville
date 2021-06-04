@@ -83,3 +83,97 @@ h3 {
   background: #adceed;
 }
 /* End Slideshow settings */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, .card-body>.card-title {
+  font-family: "Oswald";
+}
+
+h2 {
+  color: #0a6066;
+}
+
+h5 {
+  font-family: "Oswald";
+  color: #d1d6d6;
+}
+
+.card-title {
+  font-family: "Oswald";
+  color: crimson;
+  font-size: 32px;
+}
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+/****** added ******/
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  flex-grow: 1;
+}
+
+
+/*************end added *****/
+.site-footer {
+  background-image: linear-gradient(to bottom, rgba(40, 50, 80, 0.9) 0%, rgba(248, 10, 10, 0.3) 100%),url("./shared/image12.jpg");
+  padding: 20px 0;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.site-footer a:link, .site-footer a:visited, .site-footer a:active {
+  color: white;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, rgba(40, 50, 80, 0.9) 0%, rgba(248, 10, 10, 0.3) 100%),url("./shared/image12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.jumbotron h2 {
+  color: #d5dd8b;
+}
+
+.jumbotron h1 {
+  color: #d5dd8b;
+  font-size: 100px;
+}
+
+.navbar-dark {
+  background-color: #000;
+}
+/*****Music and Contact pages******/
+
+.page-bgrd {
+  background-image: linear-gradient(to bottom, rgba(40, 50, 80, 0.9) 0%, rgba(248, 10, 10, 0.3) 100%),url("./shared/concertbg.jpg");
+  padding: 20px 0;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.page-bgrd h1, .page-bgrd h2, .page-bgrd h3, .page-bgrd h4, .page-bgrd h5, .page-bgrd p {
+color: white;
+}
+
+.page-bgrd hr {
+  background-color: white;
+  height: 3px;
+
+}
